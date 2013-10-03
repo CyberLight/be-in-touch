@@ -1,0 +1,27 @@
+{
+    "name" : "Be-in-touch",
+    "version" : "0.0.1",
+    "privte" : true,
+    "scripts" : {
+	"start" : "node app"
+    },
+    "devDependencies" : {
+    },
+    "dependencies" : {
+	"express" : "3.4.0",
+	"mongoose" : "latest",
+	"jade": "*",
+	"less-middleware": "*",
+	"connect-mongo" : "latest"
+    },
+    "publicConfig" : {
+	"http_port" : 3000,
+	"reques_timeout" : 10000,
+	"session_secret" : "MySuperSecretKey",
+	"db" : {
+	    "name" : "beintouch",
+	    "host" : "localhost",
+	    "port" : "27017"
+	}
+    }
+}
